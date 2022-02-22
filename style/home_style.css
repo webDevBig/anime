@@ -13,7 +13,7 @@
 }
 
 .section1 .text_box {
-    width: 45%;
+    width: 705px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

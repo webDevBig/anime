@@ -279,7 +279,6 @@ footer .text {
 
     /*Show menu when invisible checkbox is checked*/
     .mobile-menu.show #menu {
-        /*        transform: translateY(100%);*/
         top: 104px;
     }
 
@@ -329,6 +328,9 @@ footer .text {
 @media all and (max-width:600px) {
     header .logo {
         width: 103px;
+    }
+    .mobile-menu.show #menu {
+        top: 91px;
     }
 
     footer {

@@ -320,3 +320,25 @@
         margin: 37px 0 17px;
     }
 }
+
+@media all and (max-width:375px) {
+    .learn_more_box .white_btn {
+        padding: 5px 0 0;
+        width: 100%;
+    }
+
+    header .menu_list li {
+        width: 32%;
+    }
+
+    header .menu_item {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width:350px) {
+    header .menu_list li {
+        width: 45%;
+    }
+
+}
