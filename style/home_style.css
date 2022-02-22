@@ -208,12 +208,20 @@ footer {
 }
 
 @media all and (max-width:1600px) {
+
     .section1 img {
-        max-width: 50%;
+        max-width: 52.4%;
     }
+
 
     .section2 .content {
         padding: 0;
+    }
+}
+
+@media all and (max-width:1460px) {
+    .section1 img {
+        max-width: 50%;
     }
 }
 
