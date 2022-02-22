@@ -76,13 +76,24 @@ header .menu_item {
     background-color: #F2EEE7;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
-    padding: 0px 39px;
+    padding: 0px 36px;
     margin: 0 6px;
     font-family: HelveticaNeueLTPro-bold;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+header li:nth-of-type(4) .menu_item,
+header li:nth-of-type(5) .menu_item,
+header li:nth-of-type(6) .menu_item {
+    padding: 0px 28px;
+}
+header li:nth-of-type(1) .menu_item
+{
+    margin: 0 6px 0 0;
+}
+
 
 header .menu_item.active {
     text-decoration: underline;

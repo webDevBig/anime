@@ -22,15 +22,19 @@
 
 .section1 .title {
     font-size: 20px;
+    line-height: 17px;
+    letter-spacing: 0;
     font-family: HelveticaNeueLTPro-medium;
     text-transform: uppercase;
 }
 
 .section1 h1 {
     font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0;
     font-family: HelveticaNeueLTPro-black;
     text-transform: uppercase;
-    margin: 23px 0 13px;
+    margin: 26px 0 13px;
 }
 
 .section1 .text {
@@ -86,14 +90,14 @@
     font-size: 30px;
     line-height: 35px;
     font-family: HelveticaNeueLTPro-black;
-    margin: 10px 0 17px;
+    margin: 10px 0 7px;
     text-transform: uppercase;
 }
 
 .section2 .text {
     font-size: 20px;
     line-height: 30px;
-    font-family: HelveticaNeueLTPro-medium;
+    font-family: HelveticaNeueLTPro-medium2;
 }
 
 .section2 .row_box .text {
@@ -322,7 +326,7 @@
 
 @media all and (max-width:375px) {
     .learn_more_box .white_btn {
-        padding: 5px 0 0;
+        padding: 25px 0px;
         width: 100%;
     }
 

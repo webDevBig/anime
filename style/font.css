@@ -22,3 +22,7 @@
     font-family: HelveticaNeueLTPro-roman;
     src: url("../font/HelveticaNeueLTPro-Roman.otf");
 }
+@font-face {
+    font-family: HelveticaNeueLTPro-medium2;
+    src: url("../font/HelveticaNeueLTProMd.otf");
+}
