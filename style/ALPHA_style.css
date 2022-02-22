@@ -133,9 +133,6 @@
 .learn_more_box .white_btn {
     background-color: white;
     border-radius: 9px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 66px;
     color: #303030;
     font-size: 20px;
@@ -143,10 +140,14 @@
     border: none;
     outline: none;
     box-shadow: none;
-    padding: 6px 50px 0;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
+    display: grid;
+    height: 68px;
+    padding: 25px 50px;
+    line-height: 22px;
+    text-align: center;
 }
 
 .section1 .purple_btn {
