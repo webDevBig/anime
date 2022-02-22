@@ -55,7 +55,6 @@
     justify-content: flex-end;
     align-items: flex-start;
     padding: 30px 38px;
-    transition: width .1s;
     overflow: hidden;
     position: relative;
     background-color: #F3F2F2;
