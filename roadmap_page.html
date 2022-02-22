@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Apenime</title>
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/roadmap_style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <a href="index.html" class="logo"><img alt="logo" src="assets/APENIME_LOGO.png"></a>
+            <nav class="menu mobile-menu">
+                <div class="mobile_menu_icon_box purple_section">
+                    <div class="mobile_menu_icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="all_menu_list purple_section" id="menu">
+                    <ul class="menu_list">
+                        <li><a href="index.html" class="menu_item">HOME</a></li>
+                        <li><a href="ALPHA_page.html" class="menu_item">ALPHA</a></li>
+                        <li><a href="roadmap_page.html" class="menu_item active">ROADMAP</a></li>
+                        <li><a href="" class="menu_item"><img alt="" src="assets/twitter.png" class="icon1"></a></li>
+                        <li><a href="" class="menu_item"><img alt="" src="assets/icon2.png" class="icon2"></a></li>
+                        <li><a href="" class="menu_item"><img alt="" src="assets/icon3.png" class="icon3"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="section1 section">
+        <div class="content">
+            <div class="text_box">
+                <p class="title">The Apenime Vision</p>
+                <h1>OUR ROADMAP</h1>
+                <p class="text">Bring your Apenime NFTs to life as we drive through our roadmap and <br> join a thriving community of NFT investors, ready to take over the space.</p>
+            </div>
+            <div class="card_box">
+                <div class="card">
+                    <img alt="" src="assets/01.png" class="number">
+                    <p class="note">Alpha Group</p>
+                    
+                    <div class="hide_box hide_box1">
+                       <img class="close" src="assets/close.png">
+                        <p class="title">Ultimate Alpha Group Experience</p>
+                        <p class="text">The Apenime Alpha Group revolves around buying and reselling NFTs for a profit. The Apenime Alpha will be analyzing, researching, and combing the web for all notable ETH & SOL NFT releases. Receive daily breakdowns of each NFT release along with an in-depth analysis of promising NFT projects. Meet thousands of others and gain access to buy/sell calls, member-exclusive tools and software, and an overall elite alpha experience.</p>
+                        <p class="text">Gain the opportunity of making life-long connections in the space and converse with people from all over the world. Stay notified of all trending collections and never miss out on a resell opportunity again.</p>
+                        <p class="text">Are you new to the space? Not to worry. Our beginner-friendly guides and support team will get you on your feet and running within a week.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img alt="" src="assets/02.png" class="number">
+                    <p class="note">THE VISION</p>
+                    <div class="hide_box hide_box2">
+                        <img class="close" src="assets/close.png">
+                        <p class="title">Ultimate Alpha Group Experience</p>
+                        <p class="text">The Apenime Alpha Group revolves around buying and reselling NFTs for a profit. The Apenime Alpha will be analyzing, researching, and combing the web for all notable ETH & SOL NFT releases. Receive daily breakdowns of each NFT release along with an in-depth analysis of promising NFT projects. Meet thousands of others and gain access to buy/sell calls, member-exclusive tools and software, and an overall elite alpha experience.</p>
+                        <p class="text">Gain the opportunity of making life-long connections in the space and converse with people from all over the world. Stay notified of all trending collections and never miss out on a resell opportunity again.</p>
+                        <p class="text">Are you new to the space? Not to worry. Our beginner-friendly guides and support team will get you on your feet and running within a week.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img alt="" src="assets/03.png" class="number">
+                    <p class="note">THE VISION</p>
+                    <div class="hide_box hide_box3">
+                        <img class="close" src="assets/close.png">
+                        <p class="title">Ultimate Alpha Group Experience</p>
+                        <p class="text">The Apenime Alpha Group revolves around buying and reselling NFTs for a profit. The Apenime Alpha will be analyzing, researching, and combing the web for all notable ETH & SOL NFT releases. Receive daily breakdowns of each NFT release along with an in-depth analysis of promising NFT projects. Meet thousands of others and gain access to buy/sell calls, member-exclusive tools and software, and an overall elite alpha experience.</p>
+                        <p class="text">Gain the opportunity of making life-long connections in the space and converse with people from all over the world. Stay notified of all trending collections and never miss out on a resell opportunity again.</p>
+                        <p class="text">Are you new to the space? Not to worry. Our beginner-friendly guides and support team will get you on your feet and running within a week.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+        $('.mobile_menu_icon').click(function() {
+            $(this).parents('.mobile-menu').toggleClass('show')
+        })
+        $('.card').click(function() {
+            $('.card').addClass('hide');
+            $(this).removeClass('hide');
+            $(this).addClass('show_more');
+        })
+
+        $(document).on('click', '.close', function() {
+            $(this).parents('.card').toggleClass('show_more');
+            $('.card').removeClass('hide');
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    cursor: default;
+    overflow-x: hidden;
+    color: #303030;
+}
+
+.section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 1546px;
+    display: flex;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBE7E0;
+}
+
+header .content {
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 8px 33px 0;
+}
+
+header .logo {
+    width: 189px;
+}
+
+header .logo img {
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header .all_menu_list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header .menu_list {
+    display: flex;
+    list-style: none;
+}
+
+header .menu_item {
+    height: 50px;
+    text-decoration: none;
+    color: #303030;
+    font-size: 16px;
+    line-height: 1;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: #F2EEE7;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
+    padding: 0 39px;
+    margin: 0 6px;
+    font-family: HelveticaNeueLTPro-bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu_item.active {
+    text-decoration: underline;
+    background-color: #FFFFFF;
+}
+
+header .menu_item:hover {
+    text-decoration: underline;
+    background-color: #FFFFFF;
+}
+
+header .icon1 {
+    max-width: 26.6px;
+}
+
+header .icon2 {
+    max-width: 25.75px;
+}
+
+header .icon3 {
+    max-width: 25.2px;
+}
+
+
+.mobile_menu_icon_box,
+.mobile-menu input[type=checkbox] {
+    display: none;
+}
+
+
+.social_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 23px;
+}
+
+.social_box .menu_item {
+    height: 50px;
+    text-decoration: none;
+    color: #303030;
+    font-size: 16px;
+    line-height: 1;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: #F2EEE7;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
+    padding: 0 28px;
+    margin: 0 6px;
+    font-family: HelveticaNeueLTPro-bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_box .icon1 {
+    max-width: 26.6px;
+}
+
+.social_box .icon2 {
+    max-width: 25.75px;
+}
+
+.social_box .icon3 {
+    max-width: 25.2px;
+}
+
+footer {
+    padding: 0;
+    background-color: #F3F0EB;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .content {
+    max-width: 1703px;
+    border-top: 1px solid #A4A19D;
+    padding: 30px 0 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .title {
+    font-size: 14px;
+    font-family: HelveticaNeueLTPro-roman;
+}
+
+footer .text {
+    font-size: 14px;
+    font-family: HelveticaNeueLTPro-light;
+
+}
+
+
+@media all and (max-width:1600px) {
+    .content {
+        max-width: 100%;
+        padding-left: 40px;
+        padding-right: 30px;
+    }
+
+    header .content {
+        padding: 33px 36px 33px 40px;
+    }
+
+    footer .content {
+        width: 90%;
+    }
+
+}
+
+@media all and (max-width:1200px) {
+
+    .content {
+        max-width: 100%;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    header .content {
+        padding: 33px 45px 33px 40px;
+    }
+
+}
+
+@media all and (max-width:1024px) {
+    header .menu_item {
+        padding: 0 20px;
+    }
+
+}
+
+@media all and (max-width:900px) {
+
+    header .content {
+        max-width: 100%;
+        background-color: #EBE7E0;
+        padding: 29px 21px 17px;
+    }
+
+    .mobile_menu_icon {
+        width: 25px;
+        height: 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    header .mobile_menu_icon_box {
+        width: 100%;
+        height: 100%;
+        padding: 15px 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        z-index: 20;
+    }
+
+    header .mobile_menu_icon span {
+        width: 25px;
+        height: 2px;
+        background-color: black;
+    }
+
+    header .all_menu_list {
+        position: absolute;
+        background-color: #EBE7E0;
+        padding: 15px;
+        left: 0;
+        top: -100%;
+        transition: all .3s;
+        z-index: 19;
+        padding: 15px 22px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    header .menu {
+        flex-direction: column;
+        align-items: flex-end;
+        max-width: 100%;
+        z-index: 20;
+    }
+
+
+    /*Show menu when invisible checkbox is checked*/
+    .mobile-menu.show #menu {
+        /*        transform: translateY(100%);*/
+        top: 104px;
+    }
+
+    .mobile-menu .show-menu {
+        display: block;
+
+    }
+
+    header .menu_list {
+        /*
+        column-count: 3;
+        display: block;
+*/
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header .menu_list li {
+        width: 30%;
+    }
+
+    header .menu_item {
+        height: 50px;
+        text-decoration: none;
+        color: #303030;
+        font-size: 16px;
+        line-height: 1;
+        transition: all 0.3s;
+        cursor: pointer;
+        background-color: #F2EEE7;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgb(0 0 0 / 9%);
+        padding: 0 39px;
+        margin: 0 0 10px;
+        font-family: HelveticaNeueLTPro-bold;
+    }
+
+    .content {
+        max-width: 100%;
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+}
+
+@media all and (max-width:600px) {
+    header .logo {
+        width: 103px;
+    }
+
+    footer {
+        padding: 0 21px;
+    }
+
+    .social_box .menu_item {
+        height: 30px;
+        padding: 0 13px;
+        margin: 0 4px;
+    }
+
+    .social_box .icon1 {
+        max-width: 17px;
+    }
+
+    .social_box .icon2 {
+        max-width: 16.4px;
+    }
+
+    .social_box .icon3 {
+        max-width: 16px;
+    }
+
+    footer .content {
+        padding: 18px 0 6px;
+        width: 100%;
+    }
+
+    footer .title,
+    footer .text {
+        font-size: 7px;
+    }
+}

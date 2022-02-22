@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Apenime</title>
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/mint_now_style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <a href="index.html" class="logo"><img alt="logo" src="assets/APENIME_LOGO.png"></a>
+            <nav class="menu mobile-menu">
+                <div class="mobile_menu_icon_box purple_section">
+                    <div class="mobile_menu_icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="all_menu_list purple_section" id="menu">
+                    <ul class="menu_list">
+                        <li><a href="index.html" class="menu_item">HOME</a></li>
+                        <li><a href="ALPHA_page.html" class="menu_item">ALPHA</a></li>
+                        <li><a href="roadmap_page.html" class="menu_item">ROADMAP</a></li>
+                        <li><a href="" class="menu_item"><img alt="" src="assets/twitter.png" class="icon1"></a></li>
+                        <li><a href="" class="menu_item"><img alt="" src="assets/icon2.png" class="icon2"></a></li>
+                        <li><a href="" class="menu_item"><img alt="" src="assets/icon3.png" class="icon3"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="section1 section">
+        <div class="content">
+            <div class="box">
+
+                <div class="img_box"><img alt="" src="assets/mint_icon1.png"></div>
+                <h1>PUBLIC <br> MINT</h1>
+                <a href="checkout_page.html" class="btn">MINT NOW</a>
+                <p class="text">Make sure that your MetaMask wallet is connected</p>
+            </div>
+            <div class="box">
+                <div class="img_box"><img alt="" src="assets/mint_icon2.png"></div>
+                <h1>whitelist <br> mint</h1>
+                <a href="checkout_page.html" class="btn">MINT NOW</a>
+                <p class="text">Make sure that your MetaMask wallet is connected</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+        $('.mobile_menu_icon').click(function() {
+            $(this).parents('.mobile-menu').toggleClass('show')
+        })
+
+    </script>
+</body>
+
+</html>
