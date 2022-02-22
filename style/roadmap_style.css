@@ -243,6 +243,7 @@ body {
 
     .card_box .number {
         width: 62px;
+        height: auto;
     }
 
     .card_box .note {
