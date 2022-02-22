@@ -76,7 +76,7 @@ header .menu_item {
     background-color: #F2EEE7;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
-    padding: 0 39px;
+    padding: 0px 39px;
     margin: 0 6px;
     font-family: HelveticaNeueLTPro-bold;
     display: flex;
@@ -329,6 +329,7 @@ footer .text {
     header .logo {
         width: 103px;
     }
+
     .mobile-menu.show #menu {
         top: 91px;
     }
@@ -365,8 +366,9 @@ footer .text {
         font-size: 7px;
     }
 }
+
 @media all and (max-width:375px) {
-  
+
     header .menu_list li {
         width: 32%;
     }
