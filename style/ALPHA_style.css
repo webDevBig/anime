@@ -327,18 +327,4 @@
         width: 100%;
     }
 
-    header .menu_list li {
-        width: 32%;
-    }
-
-    header .menu_item {
-        font-size: 14px;
-    }
-}
-
-@media all and (max-width:350px) {
-    header .menu_list li {
-        width: 45%;
-    }
-
 }
