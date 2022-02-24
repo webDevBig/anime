@@ -5,7 +5,7 @@
 
 .section1 .content {
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .box {
@@ -29,13 +29,13 @@
 .text_box {
     width: 50%;
     max-width: 635px;
-    min-height: 635px;
+    height: 635px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 61px 45px 74px;
+    padding: 61px 45px 44px;
     text-align: center;
     position: relative;
 }
@@ -80,17 +80,22 @@
     transition: all .3s;
     padding: 7px 0 0;
     border-radius: 9px;
+    margin: 18px 0 0;
 }
 
 .text_box .title {
     font-size: 20px;
     line-height: 23px;
-    font-family: HelveticaNeueLTPro-medium;
-    margin: 24px 0 50px;
+    margin: 8px 0 0px;
+    font-family: Helvetica_Neue_LT_Pro_53_Extended;
 }
 
-.box .title {
-   
+.text_box .note {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: HelveticaNeueLTPro-light;
+    margin: 0;
+    text-align: left;
 }
 
 .row_box {
@@ -101,12 +106,12 @@
     align-items: center;
     border-bottom: 1px solid #C4C4C4;
     border-top: 1px solid #C4C4C4;
-    padding: 8px 0 0px;
+    margin: 27px 0 0;
 }
 
 .row_box:last-of-type {
     border-top: none;
-    margin: 0 0 50px;
+    margin: 0 0 10px;
 }
 
 .row_box .max {
@@ -163,6 +168,13 @@
     padding: 5px 0 0;
 }
 
+.price {
+    font-size: 22px;
+    line-height: 23px;
+    font-family: HelveticaNeueLTPro-bold;
+    margin: 14px 0 0;
+}
+
 @media all and (max-width:1280px) {
     .text_box {
         padding: 5vw 45px 5.3vw;
@@ -177,6 +189,11 @@
 
     .box .img_box {
         height: 325px;
+    }
+
+    .box,
+    .text_box {
+        width: 100%;
     }
 }
 
@@ -194,7 +211,7 @@
     }
 
     .section1 .img_box {
-        max-width: 212px;
+        width: 212px;
         height: 212px;
     }
 
@@ -212,7 +229,7 @@
     .text_box .title {
         font-size: 13px;
         line-height: 15px;
-        margin: 9px 0 23px;
+        margin: 9px 0 0px;
     }
 
     .section1 .text {
@@ -230,10 +247,6 @@
         padding: 13px 11px 9px;
     }
 
-    .row_box:last-of-type {
-        margin: 0 0 25px;
-    }
-
     .section1 .btn {
         font-size: 25px;
     }
@@ -242,9 +255,18 @@
         max-width: 25px;
         top: -48%;
     }
-    .adetsay input[type='text']
-    {
+
+    .adetsay input[type='text'] {
         width: 50px;
+    }
+    .text_box
+    {
+        justify-content: flex-start;
+        height: auto;
+    }
+    .row_box
+    {
+        height: 58px;
     }
 
 }

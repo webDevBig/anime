@@ -26,3 +26,7 @@
     font-family: HelveticaNeueLTPro-medium2;
     src: url("../font/HelveticaNeueLTProMd.otf");
 }
+@font-face {
+    font-family: Helvetica_Neue_LT_Pro_53_Extended;
+    src: url("../font/Helvetica_Neue_LT_Pro_53_Extended.otf");
+}
