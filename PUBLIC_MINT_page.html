@@ -7,7 +7,7 @@
     <title>Apenime</title>
     <link rel="stylesheet" href="style/font.css">
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/mint_now_style.css">
+    <link rel="stylesheet" href="style/chekout_style.css">
 
 
 </head>
@@ -40,18 +40,30 @@
     <section class="section1 section">
         <div class="content">
             <div class="box">
+                <div class="img_box"></div>
+            </div>
+            <div class="text_box">
+                <img alt="" src="assets/chekout_icon.png" class="icon">
+                <h1>Mint Now</h1>
+                <p class="price">0.06 ETH per NFT</p>
+                <p class="title">MetaMask Wallet Only</p>
+                <div class="row_box">
+                    <p class="text">Amount</p>
+                    <div class="adetsay">
+                        <input type="button" value="-" onclick="minus()">
+                        <input type="text" value="1" id="adet">
+                        <input type="button" value="+" class="barti" onclick="plus()">
+                    </div>
+                    <p class="max" onclick="max()">Max</p>
+                </div>
+                <div class="row_box">
+                    <p class="text">Total</p>
+                    <p class="text total" id="total">0.06 ETH</p>
+                    
+                </div>
+                <a href="" class="btn">MINT</a>
+            </div>
 
-                <div class="img_box"><img alt="" src="assets/mint_icon1.png"></div>
-                <h1>PUBLIC <br> MINT</h1>
-                <a href="PUBLIC_MINT_page.html" class="btn">MINT NOW</a>
-                <p class="text">Make sure that your MetaMask wallet is connected</p>
-            </div>
-            <div class="box">
-                <div class="img_box"><img alt="" src="assets/mint_icon2.png"></div>
-                <h1>whitelist <br> mint</h1>
-                <a href="WHITELIST_MINT_page.html" class="btn">MINT NOW</a>
-                <p class="text">Make sure that your MetaMask wallet is connected</p>
-            </div>
         </div>
     </section>
 
@@ -60,6 +72,33 @@
         $('.mobile_menu_icon').click(function() {
             $(this).parents('.mobile-menu').toggleClass('show')
         })
+
+
+        var count = 1;
+        var countEl = document.getElementById("adet");
+        var total_price = document.getElementById("total");
+
+        function plus() {
+            if (count < 5) {
+                count++;
+                countEl.value = count;
+                total_price.innerHTML = (count * 0.06) + ' ETH'
+            }
+        }
+
+        function minus() {
+            if (count > 1) {
+                count--;
+                countEl.value = count;
+                total_price.innerHTML = (count * 0.06) + ' ETH'
+            }
+        }
+
+        function max() {
+            count = 5;
+            countEl.value = count;
+            total_price.innerHTML = (count * 0.06) + ' ETH'
+        }
 
     </script>
 </body>
