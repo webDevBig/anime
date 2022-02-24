@@ -15,6 +15,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    position: relative;
 }
 
 .box .img_box {
@@ -35,7 +36,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 61px 45px 44px;
+    padding: 61px 45px 44px 51px;
     text-align: center;
     position: relative;
 }
@@ -100,7 +101,7 @@
 
 .row_box {
     width: 100%;
-    height: 94px;
+    min-height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,6 +123,7 @@
     border: 1px solid #707070;
     padding: 20px 22px 15px;
     cursor: pointer;
+    margin: 23px 0 17px;
 }
 
 
@@ -175,6 +177,10 @@
     margin: 14px 0 0;
 }
 
+.mobile {
+    display: none;
+}
+
 @media all and (max-width:1280px) {
     .text_box {
         padding: 5vw 45px 5.3vw;
@@ -200,6 +206,7 @@
 @media all and (max-width:900px) {
     .section1 .box {
         width: 100%;
+        max-width: 384px;
         background-color: white;
         justify-content: center;
         align-items: center;
@@ -217,6 +224,7 @@
 
     .text_box {
         width: 100%;
+        max-width: 384px;
         min-height: inherit;
         padding: 23px 30px 29px;
     }
@@ -245,35 +253,47 @@
         font-size: 11px;
         line-height: 13px;
         padding: 13px 11px 9px;
+        margin: 18px 0 15px;
     }
 
     .section1 .btn {
         font-size: 25px;
+        height: 75px;
     }
 
     .section1 .icon {
         max-width: 25px;
-        top: -48%;
+        display: none;
+        top: 36px;
+    }
+
+    .section1 .mobile {
+        display: block;
     }
 
     .adetsay input[type='text'] {
         width: 50px;
     }
-    .text_box
-    {
+
+    .text_box {
         justify-content: flex-start;
         height: auto;
     }
-    .row_box
-    {
-        height: 58px;
+
+    .row_box {
+        min-height: 58px;
+        margin: 22px 0 0;
+    }
+
+    .price {
+        margin: 4px 0 0;
     }
 
 }
 
 @media all and (max-width:375px) {
     .section1 .icon {
-        right: 15px;
+        right: 19px;
     }
 }
 
